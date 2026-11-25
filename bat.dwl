@@ -7,7 +7,7 @@ import * from bat::Mutable
 suite("ticket-checkin-test-suite") in [
 
   it("Checks in a passenger ticket") in [
-    PUT `https://check-in-papi-app-xmva0n.5sc6y6-1.usa-e2.cloudhub.io/api/tickets/ACM444/checkin` with {
+    PUT `http://localhost:8081/api/tickets/ACM444/checkin` with {
       "headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
